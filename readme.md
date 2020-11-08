@@ -1,10 +1,16 @@
 # Procesverslag
-**Auteur:** -jouw naam-
+**Auteur:** Faye Kostopoulos
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
+## Startniveau
+Als startniveau kies ik voor de blauwe piste, ik vind code schrijven lastig. Wanneer ik veel opzoek en lees erover lukt het meestal wel, met hulp kom ik er in ieder geval. Ik denk dat ik af en toe de rode piste wel aan kan wanneer mijn kennis weer opgefrist is.
 
+## Mijn focus
+Bij het uitwerken van mijn website ga ik extra aandacht besteden aan de surface laag. (misschien animatie)
 
+## Mijn website
+Ik kies voor het namaken van een bestaande website.
 ## Bronnenlijst
 1. -bron 1-
 2. -bron 2-
