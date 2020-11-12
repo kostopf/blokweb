@@ -10,7 +10,27 @@ Als startniveau kies ik voor de blauwe piste, ik vind code schrijven lastig. Wan
 Bij het uitwerken van mijn website ga ik extra aandacht besteden aan de surface laag. (misschien animatie)
 
 ## Mijn website
-Ik kies voor het namaken van een bestaande website.
+Ik kies voor het namaken van een bestaande website. De kledingwebsite van kinglouie.
+link: https://www.kinglouie.nl/
+
+
+## Breakdownschets (week 1)
+
+-uitwerken voor de 1e werkgroep - eind van de eerste week-
+
+
+
+## Intake (week 1)
+
+**Screenshot(s) van de eerste pagina (small screen):**
+
+<img src="kinglouie_pag1.png" width="375px" alt="overzichtspagina kledingstukken">
+
+**Screenshot(s) van de tweede pagina (small screen):**
+
+<img src="kinglouie_pag2.png" width="375px" alt="detailpagina kledingstuk">
+
+
 ## Bronnenlijst
 1. -bron 1-
 2. -bron 2-
@@ -66,25 +86,3 @@ Ik kies voor het namaken van een bestaande website.
 
 
 
-## Breakdownschets (week 1)
-
--uitwerken voor de 1e werkgroep - eind van de eerste week-
-
-
-
-## Intake (week 1)
--uitwerken voor de kick-off werkgroep - begin van de eerste week-
-
-**Je startniveau:** -kies uit zwart, rood óf blauw-
-
-**Je focus:** -kies uit responsive óf surface plane-
-
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
-
-**Screenshot(s) van de eerste pagina (small screen):**
-
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
-
-**Screenshot(s) van de tweede pagina (small screen):**
-
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
