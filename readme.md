@@ -17,19 +17,19 @@ link: https://www.kinglouie.nl/
 ## Breakdownschets (week 1)
 
 -uitwerken voor de 1e werkgroep - eind van de eerste week-
-
+<img src="images/breakdownschets_frontend.png" alt="breakdownschetsen">
 
 
 ## Intake (week 1)
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="kinglouie_pag1.png" width="375px" alt="overzichtspagina kledingstukken">
+<img src="images/kinglouie_pag1.png" width="375px" alt="overzichtspagina_kledingstukken">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="kinglouie_pag2.png" width="375px" alt="detailpagina kledingstuk">
 
+<img src="images/kinglouie_pag1.png" width="375px" alt="detailpagina_kledingstuk">
 
 ## Bronnenlijst
 1. -bron 1-
