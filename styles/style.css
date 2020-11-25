@@ -1,6 +1,56 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -21,27 +71,122 @@ html {
 }
 
 body {
-    font-family: Neuzeit;
     background-color: #fcfdf7;
+    font-family: Neuzeit;
+
+
 }
 
-ul{
-    list-style-type: none;
+header>button>img {
+    width: 12%;
+    display: block
+}
+
+.slider_tekst{
+     background-color: var(--green);
+}
+.slider_tekst p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: .2rem 0;
+    margin: 0;
+    font-family: Neuzeit;
+    font-size: .9rem;
+}
+
+nav{
+    text-align: center;
+    display: inline-block;
+    justify-content: flex-end;
+}
+
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+section.filteren_sorteren{
+    display: flex;
+}
+section.filteren_sorteren button {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem .5rem;
+    font-family: Neuzeit;
+    text-transform: uppercase;
+    border: solid thin var(--green);
+    color: var(--black);
+    padding:.8rem 3rem;
+    width: 45%;
+    max-width: 50%;
+    border-radius: .8rem 0 .8rem 0;
+    border-bottom: 1rem;
+    box-shadow: 0 0.3rem var(--green);
+
+
+}
+
+
+section {
+
+
+
+}
+
+.flex {
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
 }
-li{
-    max-width: 33%;
+
+section>article {
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+section>article>a {
+    width: 100%;
 
 }
-.nieuwsbrief_background img{
+
+a:link {
+    text-decoration: none;
+}
+
+h3 {
+    color: var(--grey);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+
+}
+
+.nieuwsbrief_background img {
     width: 100%;
 }
 
 .nieuwsbrief_background {
     margin-left: auto;
     margin-right: auto;
-    width:70%;
+    width: 70%;
     max-width: 25em;
 }
 
@@ -58,45 +203,51 @@ li{
     margin-left: auto;
     margin-right: auto;
     max-width: 20em;
-    left:20%;
+    left: 20%;
     right: 20%;
 
     color: var(--gold);
-    font-family: ;
+
 }
 
-h4{
+h4 {
     font-size: 1.5em;
+    font-family: 'Crimson Text', serif;
+
 
 }
+
 .nieuwsbrief_tekst input[type=text] {
     width: 100%;
     padding: 1rem 1rem;
     margin: .5rem 0;
     display: inline-block;
     border: .1rem solid #ccc;
-    box-shadow:inset 0.1rem 0.1rem 0.3rem lightgrey;
+    box-shadow: inset 0.1rem 0.1rem 0.3rem lightgrey;
 
     box-sizing: border-box;
 }
-.nieuwsbrief_tekst [type=submit]{
-width: 100%;
-  background-color: var(--gold);
-  color: white;
-font-size: 1rem;
+
+.nieuwsbrief_tekst [type=submit] {
+    width: 100%;
+    background-color: var(--gold);
+    color: white;
+    font-size: 1rem;
     text-transform: uppercase;
-  padding: .5rem ;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 1rem 0 1rem 0;
-  cursor: pointer;
+    padding: .5rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
 }
-.nieuwsbrief_tekst input[type=checkbox]{
-    border-radius:0rem;
+
+.nieuwsbrief_tekst input[type=checkbox] {
+    border-radius: 0;
 
 }
 
-.nieuwsbrief_tekst a:link{
+.nieuwsbrief_tekst a:link {
     color: var(--gold);
+    text-decoration-line: underline;
 
 }
