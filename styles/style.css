@@ -1,4 +1,3 @@
-
 /* CSS Document */
 *,
 *::after,
@@ -13,6 +12,7 @@
     font-style: normal;
 }
 
+/*css voor hele html*/
 html {
     --black: #1E1A3B;
     --darkblue: #002E5E;
@@ -21,39 +21,11 @@ html {
     --gold: #AF986D;
 
     margin: 0;
-}
-
-body {
-    background-color: #fcfdf7;
-    font-family: Neuzeit;
-
+    padding: 0;
 
 }
 
-header>button>img {
-    width: 12%;
-    display: block
-}
-
-.slider_tekst{
-     background-color: var(--green);
-}
-.slider_tekst p{
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding: .2rem 0;
-    margin: 0;
-    font-family: Neuzeit;
-    font-size: .9rem;
-}
-
-nav{
-    text-align: center;
-    display: inline-block;
-    justify-content: flex-end;
-}
-
+/*button css weghalen*/
 button {
     background: transparent;
     box-shadow: 0px 0px 0px transparent;
@@ -76,63 +48,161 @@ button:active {
 button:focus {
     outline: 0;
 }
-section.filteren_sorteren{
+
+/*einde button css weghalen*/
+
+body {
+    background-color: #fcfdf7;
+    font-family: Neuzeit;
+
+
+}
+
+/*css voor de header dus het gedeelte bovenaan beide pagina's*/
+
+header > nav > ul > li > button > img:first-of-type {
+    width: 20%;
+    align-self: flex-start;
+}
+
+header > nav > ul > li > button > first-of-type {
+    display: flex;
+    padding: 0;
+}
+
+header > nav > ul > li > a > img {
+    padding: 1rem;
+}
+
+nav {
+    text-align: center;
     display: flex;
 }
+
+ul {
+    list-style: none;
+}
+
+header > nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+
+}
+
+header > nav > ul > li {
+    align-self: flex-end;
+}
+
+header > nav > ul > li:first-of-type {
+    align-self: flex-start;
+}
+
+
+main > h1 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+
+/*css voor filteren en sorteren buttons velours pagina*/
+section.filteren_sorteren {
+    display: flex;
+    position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+
+}
+
+main > section .producten {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
 section.filteren_sorteren button {
     flex-wrap: wrap;
     justify-content: center;
     margin: 1rem .5rem;
-    font-family: Neuzeit;
-    text-transform: uppercase;
-    border: solid thin var(--green);
-    color: var(--black);
-    padding:.8rem 3rem;
+    font-family: Neuzeit, sans-serif;
+    text-transform: capitalize;
+    border: solid thin var(--black);
+    color: var(--grey);
+    padding: .8rem 3rem;
     width: 45%;
     max-width: 50%;
     border-radius: .8rem 0 .8rem 0;
-    border-bottom: 1rem;
-    box-shadow: 0 0.3rem var(--green);
+    /border-bottom: 1rem;
+    /box-shadow: 0 0.3rem var(--black);
 
+}
+/*css voor img op detailpagina */
+.detail img:first-of-type {
+
+display: block;
+    margin: 0 auto;
+}
+.detail h1{
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: inline-block;
+    padding-bottom: 1rem;
+    color: var(--darkblue)
+}
+.detail a:first-of-type{
+    display: block;
+    color: var(--grey);
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: thin;
+}
+/*css voor de main*/
+
+.info_artikelen {
+    font-family: sans-serif;
+    color: var(--grey);
+    font-size: .9rem;
+
+}
+section.producten {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
 }
 
-
-section {
-
-
-
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-section>article {
-    padding: 1rem;
+section > article {
+    padding: 0.5rem;
     justify-content: space-between;
+    width: 100%;
 }
 
-section>article>a {
+section > article > a > img {
     width: 100%;
-
 }
 
 a:link {
     text-decoration: none;
 }
 
-h3 {
+h2 {
     color: var(--grey);
     font-family: 'Crimson Text', serif;
-    font-size: 1.5rem;
+    font-size: .9rem;
     text-transform: capitalize;
-
 }
 
-.nieuwsbrief_background img {
+article > a > h2 {
+    margin: 0;
+}
+
+/*
+.nieuwsbrief_background {
     width: 100%;
 }
 
@@ -146,7 +216,9 @@ h3 {
 .nieuwsbrief {
     position: relative;
 }
+*/
 
+/*
 .nieuwsbrief_tekst {
     text-align: center;
     position: absolute;
@@ -160,17 +232,39 @@ h3 {
     right: 20%;
 
     color: var(--gold);
-
 }
+*/
 
-h4 {
+
+
+h3 {
     font-size: 1.5em;
     font-family: 'Crimson Text', serif;
-
-
 }
 
-.nieuwsbrief_tekst input[type=text] {
+.color{
+    border-radius: 50%;
+    height: 2.5em;
+    width: 2.5em;
+    border: thin solid lightgrey;
+    padding: .3em;
+}
+.nieuwsbrief{
+    background-image: url(../images/newsletter-mobile2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+section.nieuwsbrief{
+        text-align: center;
+        padding: 1em;
+        padding-bottom: 6.2em;
+        max-width: 22em;
+
+}
+footer>section input[type=text] {
     width: 100%;
     padding: 1rem 1rem;
     margin: .5rem 0;
@@ -181,7 +275,7 @@ h4 {
     box-sizing: border-box;
 }
 
-.nieuwsbrief_tekst [type=submit] {
+footer>section [type=submit] {
     width: 100%;
     background-color: var(--gold);
     color: white;
@@ -194,12 +288,12 @@ h4 {
     cursor: pointer;
 }
 
-.nieuwsbrief_tekst input[type=checkbox] {
+footer>section input[type=checkbox] {
     border-radius: 0;
 
 }
 
-.nieuwsbrief_tekst a:link {
+footer>section a:link {
     color: var(--gold);
     text-decoration-line: underline;
 
