@@ -73,7 +73,7 @@ link: https://www.kinglouie.nl/
 
 -samen met je groepje opstellen-
 
-| Faye      | Daniel          | Jelle    | student 4        |
+| Faye      | Daniel          | Jelle    | Judith       |
 | ---            | ---                | ---          | ---              |
 | -aanpassingen aan de website zelf maken  |-positionering onder header   | -navigatie   | -navigatie   |
 | - grid | dit als er tijd is | -kleur svg |-sections en articles | sections
