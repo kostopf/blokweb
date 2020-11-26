@@ -16,7 +16,6 @@ link: https://www.kinglouie.nl/
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
 <img src="images/breakdownschets_frontend.png" alt="breakdownschetsen">
 
 
@@ -74,11 +73,11 @@ link: https://www.kinglouie.nl/
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
+| Faye      | Daniel          | Jelle    | student 4        |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| -aanpassingen aan de website zelf maken  |-positionering onder header   | -navigatie   | -navigatie   |
+| - grid | dit als er tijd is | -kleur svg |-sections en articles | sections
+| -y-scaling            | -flex               | cms          | verstopppen h1              |
 
 ### Verslag van meeting
 
