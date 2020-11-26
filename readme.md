@@ -63,7 +63,7 @@ link: https://www.kinglouie.nl/
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+-Het opzetten van html ging oke, css vind ik lastig om mee te werken, ik moest veel opzoeken maar het gaat steeds beter-
 
 **Screenshot(s):**
 

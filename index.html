@@ -16,26 +16,30 @@
 
 <body>
     <script src="scripts/script.js"></script>
+
     <header>
-        <button><img src="images/Hamburger_icon.png" alt="#"></button>
-        <img src="images/kinglouie-logo.svg" alt="logo king louie">
-        <nav>
-            <button><img src="images/dark-search.svg" alt="zoek button"></button>
-            <a href="#"><img src="images/dark-wishlist.svg" alt="verlanglijst icoon"></a>
-            <a><img src="images/dark-shopping-bag.svg" alt="winkelmand icoon"></a>
+      <nav>
+        <ul>
+          <li><button><img src="images/Hamburger_icon.png" alt="#"></button></li>
+          <li><img src="images/kinglouie-logo.svg" alt="logo king louie"></li>
+          <li><button><img src="images/dark-search.svg" alt="zoek button"></button></li>
+          <li><a href="#"><img src="images/dark-wishlist.svg" alt="verlanglijst icoon"></a></li>
+          <li><a><img src="images/dark-shopping-bag.svg" alt="winkelmand icoon"></a></li>
+        </ul>
         </nav>
     </header>
+
     <main>
         <h1>velours</h1>
         <section class="filteren_sorteren">
             <button type="button">Filteren</button>
             <button type="button">Sorteren</button>
         </section>
-        <section>
+        <section class="info_artikelen">
 
             <p>9 producten</p>
             <form action="#">
-                <label>Toon</label>
+                <label>Toon:</label>
                 <select>
                     <option>24 artikelen</option>
                     <option>36 artikelen</option>
@@ -47,24 +51,24 @@
         </section>
         <section class="producten">
             <article>
-                <a href="kinglouie.nl"><img src="images/kledingstuk1.jpg" alt="model in roze jurk met bloemenpatroon en halflange mouwen">
+                <a href="detailpagina.html"><img src="images/kledingstuk1.jpg" alt="model in roze jurk met bloemenpatroon en halflange mouwen">
                     <h2>uma fluted dress tao</h2>
                 </a>
-                <p>€109,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur">
+                <p>€109,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk2.jpg" alt="model in roze jurk met bloemenpatroon en lange mouwen">
                     <h2>zoe dress tao</h2>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur">
+                <p>€99,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
 
             </article>
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk3.jpg" alt="model in rode gebloemde rok met geel shirt">
                     <h2>border skirt ceylon</h2>
                 </a>
-                <p>€64,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur">
+                <p>€64,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
             </article>
 
 
@@ -72,21 +76,21 @@
                 <a href="kinglouie.nl"><img src="images/kledingstuk4.jpg" alt="model in rood vest met bloemenpatroon">
                     <h2>border skirt ceylon</h2>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur">
+                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk5.jpg" alt="model in rode jurk met bloemenpatroon en halflange mouwen">
                     <h2>zoe dress ceylon</h2>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="blauwe stoftextuur">
+                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="blauwe stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk6.jpg" alt="model in blauwe jumpsuit met ribpatroon">
                     <h2>macy jumpsuit rib velours</h2>
                 </a>
-                <p>€109,95</p> <img src="images/stoftextuur.jpg" alt="blauwe stoftextuur">
+                <p>€109,95</p> <img src="images/stoftextuur.jpg" alt="blauwe stoftextuur" class="color">
             </article>
         </section>
 
@@ -94,7 +98,7 @@
 
     <footer>
         <section class="nieuwsbrief">
-            <section class="nieuwsbrief_tekst">
+
                 <h3>Nieuwsbrief</h3>
                 <p>Meld je aan voor de nieuwsbrief en ontvang 10% korting</p>
                 <form action="#">
@@ -102,9 +106,9 @@
                     <label><input type="submit" value="inschrijven"></label>
                     <input type="checkbox" required>Ik heb de privacy statement gelezen en ga ermee akkoord. <a href="www.kinglouie.nl">privacy beleid</a>
                 </form>
-            </section>
-            <section class="nieuwsbrief_background">
-                <img src="images/newsletter-mobile2.png" alt="achtergrond afbeelding"></section>
+
+            <!--<section class="nieuwsbrief_background">
+                <img src="images/newsletter-mobile2.png" alt="achtergrond afbeelding"></section>-->
 
         </section>
 
