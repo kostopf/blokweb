@@ -3,8 +3,10 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="jouw naam">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,8 +17,8 @@
 </head>
 
 <body class="detailpagina">
-    <script src="scripts/script.js"></script>
     <header>
+        <h1 class="visuallyhidden"> King Louie - Uma Fluted Dress Tao </h1>
         <nav>
             <ul class="flex">
                 <li><button><img src="images/dark-search.svg" alt="zoek button"></button></li>
@@ -29,14 +31,30 @@
         </nav>
     </header>
     <main class="detail">
-        <img src="images/kledingstuk1.jpg" alt="#">
-        <h1>Uma Fluted Dress Tao</h1>
-        <a href="#">Schrijf de eerste review over dit product</a>
-        <p>€109,95</p>
-        <p>Kleur: Black</p>
-        <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
+        <section>
+            <img src="images/kledingstuk1.jpg" alt="#">
+            <h2>Uma Fluted Dress Tao</h2>
+            <a href="#">Schrijf de eerste review over dit product</a>
+            <p>€109,95</p>
+            <p>Kleur: Black</p>
+            <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
+        </section>
+        <section>
+            <div>
+                <h2>Uma Fluted Dress Tao</h2>
+                <p>€109,95</p>
+            </div>
+            <button type="button" title="kies je maat">Kies je maat</button>
+
+
+            <button type="submit" title="In winkelmand">In winkelmand</button>
+
+        </section>
+        <!--
         <form>
-            <label>Maat</label>
+
+           <h3>Product opties</h3>
+            <label>Kies je maat</label>
             <select>
                 <option>XS</option>
                 <option>S</option>
@@ -48,13 +66,20 @@
         </form>
         <p> Uitverkocht? Klik op jouw maat en ontvang een mail bij nieuwe voorraad.</p>
         <a href="#">Bekijk maatboog</a>
-        <form>
+        -->
+
+        <!--
             <label>Aantal</label>
             <input type="text">
-            <button type="submit" title="In winkelmand">In winkelmand</button>
-        </form>
+-->
+        <!--
+
+        <a href="#"><img src="images/dark-wishlist.svg" alt="#" id="heart">Voeg toe aan verlanglijst</a>
+-->
+
         <section>
-            <a href="#"><img src="images/dark-wishlist.svg" alt="#" id="heart"> Voeg toe aan verlanglijst</a>
+            <h3 class="visuallyhidden">Informatie over bestellen</h3>
+
             <ul>
                 <li>
                     Gratis verzending v.a. €49,95
@@ -71,8 +96,8 @@
             </ul>
         </section>
         <section>
-            <h2>Gegevens</h2>
-            <ul>
+            <h2 id="gegevens">Gegevens</h2>
+            <ul id="gegevensInhoud">
                 <li>
                     Midi jurk
                 </li>
@@ -95,46 +120,69 @@
             </ul>
 
         </section>
-        <h2>Meer informatie</h2>
-        <table>
-            <tr>
-                <td>Gemaakt in</td>
-                <td>Turkije</td>
-            </tr>
-            <tr>
-                <td>Producent</td>
-                <td>Suteks Tekstil</td>
-            </tr>
-            <tr>
-                <td>SKU</td>
-                <td>05698001</td>
-            </tr>
-            <tr>
-                <td>Wasvoorschrift</td>
-                <td>Binnenstebuiten wassen op 30 graden, gebruik hiervoor een fijnwasprogramma. Niet bleken. Strijken op een lage temperatuur. Chemisch reinigen. Niet in de droger. Plat laten drogen (in de schaduw). Strijk het item terug in originele vorm.</td>
-            </tr>
-            <tr>
-                <td>Samenstelling</td>
-                <td>80% viscose, 20% polyester</td>
-            </tr>
-            <tr>
-                <td>Lengte</td>
-                <td>107 cm (M)</td>
-            </tr>
-        </table>
+        <section>
+            <h2 id="meerInformatie">Meer informatie</h2>
+            <table id="meerInformatieInhoud">
+                <tr>
+                    <td>Gemaakt in</td>
+                    <td>Turkije</td>
+                </tr>
+                <tr>
+                    <td>Producent</td>
+                    <td>Suteks Tekstil</td>
+                </tr>
+                <tr>
+                    <td>SKU</td>
+                    <td>05698001</td>
+                </tr>
+                <tr>
+                    <td>Wasvoorschrift</td>
+                    <td>Binnenstebuiten wassen op 30 graden, gebruik hiervoor een fijnwasprogramma. Niet bleken. Strijken op een lage temperatuur. Chemisch reinigen. Niet in de droger. Plat laten drogen (in de schaduw). Strijk het item terug in originele vorm.</td>
+                </tr>
+                <tr>
+                    <td>Samenstelling</td>
+                    <td>80% viscose, 20% polyester</td>
+                </tr>
+                <tr>
+                    <td>Lengte</td>
+                    <td>107 cm (M)</td>
+                </tr>
+            </table>
+        </section>
         <section>
             <h2>Reviews</h2>
 
         </section>
         <section>
-            <h2>Verzending</h2>
+            <h2 id="verzending">Verzending</h2>
+            <div id="verzendingInhoud">
+            <h3>Verzendtarieven:</h3>
+            <p>Gratis verzending bij €49,95 of meer</p>
+            <h3>Onder de €49,95:</h3>
+            <p>€ 3,95 standaard levering met PostNL</p>
+            <p>GRATIS retourneren binnen 30 dagen</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="visuallyhidden">Aanbevolen producten</h2>
+            <article>
+                <h3 class="visuallyhidden">Zelfde model</h3>
+                <img src="images/kledingstuk1.jpg" alt="model in roze jurk met bloemenpatroon en halflange mouwen">
+                <button></button>
+            </article>
+            <article>
+                <h3 class="visuallyhidden">Zelfde print</h3>
+                <img src="images/gebloemdepatroon.jpg" alt="roze gebloemde stoftextuur">
+                <button></button>
+            </article>
         </section>
     </main>
 
     <footer>
         <section class="nieuwsbrief">
 
-            <h3>Nieuwsbrief</h3>
+
+            <h4>Nieuwsbrief</h4>
             <p>Meld je aan voor de nieuwsbrief en ontvang 10% korting</p>
             <form action="#">
                 <input type="text" placeholder="Voer uw e-mailadres in" required>
@@ -146,26 +194,33 @@
 
 
         <section class="footer_nav">
-            <button type="button">duurzaamheid</button>
-            <nav>
-                <ul>
-                    <li><a href="kinglouie.nl">Visie & doelen</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Fabrikanten</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Fair Wear Foundation</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Wear & Care</a>
-
-                    </li>
-                </ul>
-            </nav>
+            <h3 class="visuallyhidden">Overige informatie over King louie</h3>
             <section>
-                <button type="button">King louie</button>
-                <nav>
+                <h4 class="visuallyhidden
+           ">Duurzaamheid</h4>
+                <button type="button" id="duurzaamheid">duurzaamheid</button>
+                <nav id="duurzaamheidInhoud">
+                    <ul>
+                        <li><a href="kinglouie.nl">Visie & doelen</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Fabrikanten</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Fair Wear Foundation</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Wear & Care</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h4 class="visuallyhidden">King louie</h4>
+
+                <button type="button" id="kingLouie">King louie</button>
+                <nav id="kingLouieInhoud">
                     <ul>
                         <li> <a href="#"> Over ons</a></li>
                         <li> <a href="#"> Onze winkels</a></li>
@@ -178,8 +233,9 @@
                 </nav>
             </section>
             <section>
-                <button type="button">Service</button>
-                <nav>
+                <h4 class="visuallyhidden">Service</h4>
+                <button type="button" id="service">Service</button>
+                <nav id="serviceInhoud">
                     <ul>
                         <li> <a href="#"> Bestellen</a></li>
                         <li> <a href="#"> Betalen</a></li>
@@ -192,16 +248,18 @@
                 </nav>
             </section>
             <section>
-                <button type="button">Contact</button>
-                <h4>consumenten</h4>
-                <p>Stuur je bericht naar</p>
-                <a href="mailto:webshop@kinglouie.nl">webshop@kinglouie.nl</a>
-                <p>of bel onze klantenservice</p>
-                <a href="tel: +31 (0)20 330 00 62">+31 (0)20 330 00 62</a>
-                <p>ma - vrij: 9:30 - 17:00 uur</p>
-                <p>Vanwege de huidige omstandigheden zijn wij helaas niet op alle werkdagen telefonisch bereikbaar. Stuur ons een e-mail en we zullen je zo snel mogelijk antwoorden.</p>
-                <h4>Groothandel</h4>
-                <p>Kom direct in contact met onze <a href="#">Groothandel</a></p>
+                <button type="button" id="contact">Contact</button>
+                <div id="contactInhoud">
+                    <h4>consumenten</h4>
+                    <p>Stuur je bericht naar</p>
+                    <a href="mailto:webshop@kinglouie.nl">webshop@kinglouie.nl</a>
+                    <p>of bel onze klantenservice</p>
+                    <a href="tel:+31(0)203300062">+31 (0)20 330 00 62</a>
+                    <p>ma - vrij: 9:30 - 17:00 uur</p>
+                    <p>Vanwege de huidige omstandigheden zijn wij helaas niet op alle werkdagen telefonisch bereikbaar. Stuur ons een e-mail en we zullen je zo snel mogelijk antwoorden.</p>
+                    <h4>Groothandel</h4>
+                    <p>Kom direct in contact met onze <a href="#">Groothandel</a></p>
+                </div>
             </section>
 
             <ul class="logos">
@@ -232,12 +290,17 @@
                 </li>
 
             </ul>
-            <section class="privacy"> <a href="# ">Privacybeleid</a> <a href="#">Algemene voorwaarden</a>
+            <section class="privacy">
+                <h5 class="visuallyhidden">privacybeleid en algemene voorwaarden</h5>
+                <a href="# ">Privacybeleid</a> <a href="#">Algemene voorwaarden</a>
             </section>
             <section class="social_media">
+                <h5 class="visuallyhidden">sociale media king louie</h5>
                 <a href="#"><img src="images/facebook.svg" alt="facebook logo"></a> <a href="#"><img src="images/instagram.svg" alt="instagram logo"></a>
                 <a href="#"><img src="images/pinterest.svg" alt="pinterest logo"></a>
             </section>
         </section>
+
     </footer>
+<script src="scripts/script.js"></script>
 </body></html>

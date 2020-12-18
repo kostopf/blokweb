@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: Neuzeit;
-    src: url(fonts/NeuzeitGroteskLight.otf);
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*css voor hele html*/
 html {
@@ -23,7 +17,9 @@ html {
     margin: 0;
     padding: 0;
 
+
 }
+
 
 /*button css weghalen*/
 /*https://www.codegrepper.com/code-examples/actionscript/css+remove+styling+from+button*/
@@ -41,10 +37,6 @@ button:hover {
     text-shadow: 0px 0px 0px transparent;
 }
 
-button:active {
-    outline: none;
-    border: none;
-}
 
 button:focus {
     outline: 0;
@@ -54,11 +46,59 @@ button:focus {
 
 body {
     background-color: #fcfdf7;
-    font-family: Neuzeit;
+    font-family: 'Open Sans', sans-serif;
     margin: 1rem;
-    color: var(--black);
+    color: var(--darkblue);
 
 
+}
+
+/*css voor toegankelijkheid*/
+/*links*/
+a {
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: DarkSlateBlue;
+}
+
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/*buttons*/
+
+button:hover {
+    cursor: pointer;
+    /color: white;
+    /background-color: lightblue;
+    /border-color: lightblue;
+}
+
+button:focus {
+    background-color: lightblue;
+    border: lightblue;
+}
+
+/*https://levelup.gitconnected.com/a11y-visually-hidden-elements-aea4ee784142*/
+.visuallyhidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }
 
 /*css voor de header dus het gedeelte bovenaan beide pagina's*/
@@ -91,17 +131,31 @@ header > nav > ul > li > a:first-of-type {
 }
 
 
-main > h1 {
+main > h2 {
     text-align: center;
-    font-family: sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-transform: uppercase;
+    color: var(--black);
+    letter-spacing: -0.04rem;
 
 }
 
 
 /*css voor filteren en sorteren buttons velours pagina*/
+.filteren_sorteren h3 {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+}
+
 section.filteren_sorteren {
     display: flex;
     position: -webkit-sticky;
@@ -111,85 +165,65 @@ section.filteren_sorteren {
 
 }
 
+
+.filteren_sorteren button {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem .5rem;
+    text-transform: capitalize;
+    border: solid thin var(--black);
+    color: var(--grey);
+    padding: .8rem 3rem;
+    width: 50%;
+    border-radius: .8rem 0 .8rem 0;
+    /background-color: #fcfdf7;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease;
+}
+
 main > section .producten {
     justify-content: space-between;
     align-items: center;
     display: flex;
 }
 
-.filteren_sorteren button {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem .5rem;
-    font-family: Neuzeit, sans-serif;
-    text-transform: capitalize;
-    border: solid thin var(--black);
-    color: var(--grey);
-    padding: .8rem 3rem;
-    width: 50%;
-    /max-width: 50%;
-    border-radius: .8rem 0 .8rem 0;
-    /border-bottom: 1rem;
-    /box-shadow: 0 0.3rem var(--black);
-    background-color: #fcfdf7
-}
-
 /*css voor informatie aantal artikelen*/
+
 .info_artikelen {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
+    margin-bottom: .8rem;
+
 }
 
 .info_artikelen p {
     margin: 0 0 0 .5rem;
     font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
 
 }
 
 .info_artikelen form {
     margin-right: .5rem;
 
+
 }
 
 .info_artikelen > form > select {
     border: none;
     color: var(--black);
+    cursor: pointer;
+
 }
 
 .info_artikelen > form > label {
     font-size: .8rem;
 }
 
-/*css voor img op detailpagina */
-.detail img:first-of-type {
-
-    display: block;
-    margin: 0 auto;
-}
-
-
-.detail h1 {
-    font-family: 'Crimson Text', serif;
-    font-size: 1.2rem;
-    font-weight: 800;
-    display: inline-block;
-    padding-bottom: 1rem;
-    color: var(--darkblue)
-}
-
-.detail a:first-of-type {
-    display: block;
-    color: var(--grey);
-    text-decoration: underline;
-    font-size: 1rem;
-    font-weight: thin;
-}
-
-/*css voor de main velours pagina*/
+/*css voor de main, overzichts pagina*/
 
 .info_artikelen {
-    font-family: sans-serif;
     color: var(--grey);
     font-size: .9rem;
 
@@ -215,20 +249,21 @@ a:link {
     text-decoration: none;
 }
 
-h2 {
+h3 {
     color: var(--grey);
     font-family: 'Crimson Text', serif;
     font-size: .9rem;
     text-transform: capitalize;
 }
 
-article > a > h2 {
+article > a > h3 {
     margin: 0;
 }
 
-h3 {
-    font-size: 1.5em;
-    font-family: 'Crimson Text', serif;
+
+.producten article p {
+    color: var(--black);
+    font-weight: 1000;
 }
 
 .color {
@@ -240,25 +275,64 @@ h3 {
 }
 
 /*main voor de detailpagina*/
-.detail h1 {
-    padding-bottom: 0;
+
+.detail img:first-of-type{
+    width: 100%;
 }
 
-.detail p:first-of-type {
-    font-family: sans-serif;
-    font-size: 1.5rem;
-    letter-spacing: .03rem;
+/body.detailpagina > main.detail > section > h2:first-of-type{
+    background: none;
+
 }
 
-.detail p:nth-of-type(2) {
-    font-family: sans-serif;
+main.detail section h2 {
+    text-transform: uppercase;
     color: var(--darkblue);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    background: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: right 3% bottom 50%;
+    background-size: .8rem;
+}
+
+/main.detail section h2:first-of-type{
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+    display: inline-block;
+    padding-bottom: 1rem;
+    color: var(--darkblue)
+}
+
+.detail a:first-of-type {
+    display: block;
+    color: var(--grey);
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: thin;
+
+}
 
 
+.detail p {
+
+    color: var(--darkblue);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+
+
+}
+.detail h3{
+    color: var(--darkblue);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 }
 
 .detail p:nth-of-type(3) {
-    font-family: sans-serif;
+
     font-size: .9rem;
     font-weight: 100;
 }
@@ -268,12 +342,14 @@ h3 {
     text-decoration: underline;
 
 }
-
-.detail form {
+.detail > section > div > h2{
+    background: none;
+}
+/.detail form {
     padding: 1rem 0;
 }
 
-.detail form input {
+/.detail form input {
     display: block;
     width: 20%;
     padding: .8rem;
@@ -282,17 +358,53 @@ h3 {
     color: var(--darkblue);
     text-align: right;
 }
+.detail> section >div:nth-of-type(2){
+    display: flex;
+    justify-content: space-between;
 
-.detail > form > button {
-    margin: 1rem 0rem;
-    font-family: Neuzeit, sans-serif;
+}
+.detail section:nth-of-type(2){
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /z-index: 45;
+    width: 100%;
+    padding: 0 1rem;
+    /margin: 0;
+    /box-sizing: border-box;
+    box-shadow: 0 -0.05px 1rem rgba(8,5,6,.2);
+    background-color: #fcfdf7;
+}
+.detail > section > button:first-of-type {
+    margin-bottom:
     text-transform: uppercase;
     font-weight: 500;
-    letter-spacing: .13rem;
+    text-align: left;
+    letter-spacing: 0.030rem;
+    color: var(--grey);
+    border: solid thin var(--grey);
+    background-color: white;
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: .8rem 0 .8rem 0;
+    box-shadow: none;
+    background: url(../images/dark-dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 3% bottom 50%;
+    background-size: .8rem;
+
+}
+
+.detail > section > button {
+    margin: 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.030rem;
     color: white;
     border: solid thin var(--gold);
     background-color: var(--gold);
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     width: 100%;
     border-radius: .8rem 0 .8rem 0;
     box-shadow: 0 0.20rem 0 0 #1e1a3c;
@@ -302,28 +414,91 @@ h3 {
 #heart {
     padding-right: 1rem;
     display: inline;
+    width: 10%;
 }
 
-main.detail > section > a {
-    text-decoration-line: none;
+.detail section:nth-of-type(3) {
+    border-bottom: solid thin var(--grey);
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+
 }
+
+.detail section:nth-of-type(3) ul
+{
+    list-style-type: none;
+    padding: 1rem 0;
+    color: var(--gold);
+    font-weight: 400;
+    font-size: .9rem;
+    padding-top: 1rem;
+
+}
+
+.detail section:nth-of-type(3) ul li {
+    /padding: .5rem 0;
+}
+
+
+.detail section:nth-of-type(4),
+.detail section:nth-of-type(5),
+.detail section:nth-of-type(6) {
+    border-bottom: solid thin var(--grey);
+}
+
+.detail section:nth-of-type(8){
+display: flex; }
+
+.detail section:nth-last-of-type(4) table tr td {
+    color: var(--darkblue);
+    font-family: 'Crimson Text', serif;
+}
+
+.detail section table tr td:nth-of-type(odd) {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-right: 3rem;
+    display: table;
+
+}
+
+.detail section table tr td:nth-of-type(even) {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+
+
+}
+
+/.detail section h3:nth-of-type(3) {
+    color: var(--darkblue);
+    font-size: 1.5rem;
+    height: 1rem;
+    width: 100%;
+    position: relative;
+    clip-path: none;
+    overflow: visible;
+
+}
+
 
 /* css voor de footer*/
+/* nieuwsbrief css*/
 .nieuwsbrief {
     background-image: url(../images/newsletter-mobile2.png);
     background-repeat: no-repeat;
     background-size: cover;
+
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 4rem;
-
-}
-
-.nieuwsbrief {
+    margin-bottom: 6rem;
     text-align: center;
     padding: 1em;
     padding-bottom: 6.7em;
     max-width: 22em;
+    margin-top: 10rem;
+    color: var(--gold);
 
 }
 
@@ -353,13 +528,11 @@ footer > section [type=submit] {
 
 footer > section input[type=checkbox] {
     border-radius: 0;
-
-
-
 }
 
-.nieuwsbrief {
-    margin-top: 10rem;
+.nieuwsbrief p {
+    font-family: 'Crimson Text', serif;
+    font-size: 1rem;
     color: var(--gold);
 }
 
@@ -369,10 +542,31 @@ footer > section input[type=checkbox] {
 
 }
 
-.footer_nav section:nth-of-type(3) {
-    border-bottom: solid thin var(--gold);
-    padding-bottom: 1rem;
+.nieuwsbrief a:hover {
+    text-decoration: none;
 }
+
+
+/* css voor navigatie in de footer */
+#button{
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.hide{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+footer{
+margin-bottom: 18rem;}
 
 .footer_nav button {
     font-size: 1.2rem;
@@ -380,11 +574,21 @@ footer > section input[type=checkbox] {
     color: var(--darkblue);
     font-weight: 400;
     line-height: 1rem;
+    transition: all 0.3s ease;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    background: url(../images/dark-dropdown-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 3% top 20%;
+    background-size: .8rem;
+    padding-bottom: 1rem;
+
 }
 
 .footer_nav ul {
     list-style: none;
-    padding-left: .8rem;
+    padding-left: 0;
 
 }
 
@@ -394,45 +598,65 @@ footer > section input[type=checkbox] {
 
 .footer_nav nav > ul > li > a {
     color: var(--darkblue);
-    font-family: sans-serif;
     font-weight: 300;
     letter-spacing: .03rem;
     font-size: .8rem;
-
-
-
 }
 
-footer h4 {
+.footer_nav nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+
+.footer_nav > section {
+    border-bottom: solid thin var(--gold);
+    padding-top: 1rem;
+    margin-left: .5rem;
+}
+
+.footer_nav > section:last-of-type {
+    border: none;
+}
+
+.footer_nav > section:nth-of-type(4) > h4 {
     color: var(--gold);
     font-weight: 100;
-    font-family: sans-serif;
     text-transform: capitalize;
     font-size: .9rem;
+    margin-bottom: .5rem;
 }
 
 footer p {
-    font-family: sans-serif;
+
     font-weight: 100;
     font-size: .8rem;
     color: var(--grey);
     letter-spacing: .03rem;
+    margin-bottom: .3rem;
+    margin-top: 0;
 }
 
-footer p:nth-of-type(4) {
-    font-family: sans-serif;
 
-}
 
-footer section:nth-of-type(3) a:link {
-    color: var(--black);
+footer section:nth-of-type(4) a:link {
+    color: var(--grey);
     text-decoration: underline;
+    font-weight: 100;
+    font-size: .8rem;
+    padding-bottom: .3rem;
+}
+
+footer section:nth-of-type(4) a:hover {
+    color: lightgrey;
+
+
 }
 
 .logos {
-
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+
 
 }
 
@@ -448,7 +672,6 @@ footer section:nth-of-type(3) a:link {
 
 .privacy a {
     color: var(--grey);
-    font-family: sans-serif;
     font-weight: 100;
     font-size: .8rem;
     padding: 1rem;
@@ -457,6 +680,7 @@ footer section:nth-of-type(3) a:link {
 .social_media {
     display: flex;
     justify-content: center;
+
 
 
 }

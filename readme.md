@@ -31,9 +31,9 @@ link: https://www.kinglouie.nl/
 <img src="images/kinglouie_pag1.png" width="375px" alt="detailpagina_kledingstuk">
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. visually hidden - https://levelup.gitconnected.com/a11y-visually-hidden-elements-aea4ee784142
+2. bronnen styling weg -
+3. js toggle - https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
 
 
 
@@ -51,11 +51,32 @@ link: https://www.kinglouie.nl/
 
 -same as voortgang 1-
 
+### Stand van zaken
+
+- Ik ben nu veel verder met me code, ik heb al js toegevoegd. Dit vond ik lastig maar met hulp en het internet kom je al erg ver. Ik loop er wel steeds tegen aan dat de website die ik aan het namaken ben steeds verandert. Ik moet dan ook steeds me code aanpassen, dit dan omdat ik van sommige toevoegingen denk dat dat goeie afwisseling is in de code.
+
+**Screenshot(s):**
+
+-screenshot(s) van hoe ver je bent met korte uitleg-
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+| Faye      | Daniel          | Jelle    | student 4        |
+| ---            | ---                | ---          | ---              |
+| -aanpassingen aan de website zelf maken  |-positionering onder header   | -navigatie   | -navigatie   |
+| - grid | dit als er tijd is | -kleur svg |-sections en articles | sections
+| -y-scaling            | -flex               | cms          | verstopppen h1              |
+
+### Verslag van meeting
+
+
 
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Het html en css gaat tot nu toe okay, het is echt weer wennen. Vaak moet ik even opzoeken wat de namen ook al weer zijn van properties. Ik heb me vooral gefocused op de basis van de 2 pagina's.
 
 
 
@@ -81,7 +102,7 @@ link: https://www.kinglouie.nl/
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+Na de meeting kon ik goed verder aan de slag met grid en wist ik ook articles ipv secties aan te passen.
 
 
 

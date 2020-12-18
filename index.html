@@ -3,8 +3,9 @@
 
 <head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="author" content="jouw naam">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,9 +16,9 @@
 </head>
 
 <body>
-    <script src="scripts/script.js"></script>
 
     <header>
+        <h1 class="visuallyhidden">Velours kleding - King Louie</h1>
         <nav>
             <ul class="flex">
                 <li><button><img src="images/dark-search.svg" alt="zoek button"></button></li>
@@ -31,13 +32,15 @@
     </header>
 
     <main>
-        <h1>velours</h1>
+        <h2>velours</h2>
+
         <section class="filteren_sorteren">
+            <h3> Filteren en sorteren</h3>
             <button type="button">Filteren</button>
             <button type="button">Sorteren</button>
         </section>
         <section class="info_artikelen">
-
+            <h4 class="visuallyhidden">Informatie over gevonden producten</h4>
             <p>9 producten</p>
             <form action="#">
                 <label>Toon:</label>
@@ -51,47 +54,48 @@
             </form>
         </section>
         <section class="producten">
+            <h2 class="visuallyhidden">Gevonden producten</h2>
             <article>
                 <a href="detailpagina.html"><img src="images/kledingstuk1.jpg" alt="model in roze jurk met bloemenpatroon en halflange mouwen">
-                    <h2>uma fluted dress tao</h2>
+                    <h3>uma fluted dress tao</h3>
                 </a>
-                <p>€109,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
+                <p>€ 109,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk2.jpg" alt="model in roze jurk met bloemenpatroon en lange mouwen">
-                    <h2>zoe dress tao</h2>
+                    <h3>zoe dress tao</h3>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
+                <p>€ 99,95</p> <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
 
             </article>
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk3.jpg" alt="model in rode gebloemde rok met geel shirt">
-                    <h2>border skirt ceylon</h2>
+                    <h3>border skirt ceylon</h3>
                 </a>
-                <p>€64,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
+                <p>€ 64,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
             </article>
 
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk4.jpg" alt="model in rood vest met bloemenpatroon">
-                    <h2>border skirt ceylon</h2>
+                    <h3>border skirt ceylon</h3>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
+                <p>€ 99,95</p> <img src="images/stoftextuur_rood.jpg" alt="rode gebloemde stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk5.jpg" alt="model in rode jurk met bloemenpatroon en halflange mouwen">
-                    <h2>zoe dress ceylon</h2>
+                    <h3>zoe dress ceylon</h3>
                 </a>
-                <p>€99,95</p> <img src="images/stoftextuur_rood.jpg" alt="blauwe stoftextuur" class="color">
+                <p>€ 99,95</p> <img src="images/stoftextuur_rood.jpg" alt="blauwe stoftextuur" class="color">
             </article>
 
             <article>
                 <a href="kinglouie.nl"><img src="images/kledingstuk6.jpg" alt="model in blauwe jumpsuit met ribpatroon">
-                    <h2>macy jumpsuit rib velours</h2>
+                    <h3>macy jumpsuit rib velours</h3>
                 </a>
-                <p>€109,95</p> <img src="images/stoftextuur.jpg" alt="blauwe stoftextuur" class="color">
+                <p>€ 109,95</p> <img src="images/stoftextuur.jpg" alt="blauwe stoftextuur" class="color">
             </article>
         </section>
 
@@ -100,7 +104,8 @@
     <footer>
         <section class="nieuwsbrief">
 
-            <h3>Nieuwsbrief</h3>
+
+            <h4>Nieuwsbrief</h4>
             <p>Meld je aan voor de nieuwsbrief en ontvang 10% korting</p>
             <form action="#">
                 <input type="text" placeholder="Voer uw e-mailadres in" required>
@@ -112,26 +117,33 @@
 
 
         <section class="footer_nav">
-            <button type="button">duurzaamheid</button>
-            <nav>
-                <ul>
-                    <li><a href="kinglouie.nl">Visie & doelen</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Fabrikanten</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Fair Wear Foundation</a>
-
-                    </li>
-                    <li><a href="kinglouie.nl">Wear & Care</a>
-
-                    </li>
-                </ul>
-            </nav>
+            <h3 class="visuallyhidden">Overige informatie over King louie</h3>
             <section>
-                <button type="button">King louie</button>
-                <nav>
+                <h4 class="visuallyhidden
+           ">Duurzaamheid</h4>
+                <button type="button" id="duurzaamheid">duurzaamheid</button>
+                <nav id="duurzaamheidInhoud">
+                    <ul>
+                        <li><a href="kinglouie.nl">Visie & doelen</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Fabrikanten</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Fair Wear Foundation</a>
+
+                        </li>
+                        <li><a href="kinglouie.nl">Wear & Care</a>
+
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h4 class="visuallyhidden">King louie</h4>
+
+                <button type="button" id="kingLouie">King louie</button>
+                <nav id="kingLouieInhoud">
                     <ul>
                         <li> <a href="#"> Over ons</a></li>
                         <li> <a href="#"> Onze winkels</a></li>
@@ -144,8 +156,9 @@
                 </nav>
             </section>
             <section>
-                <button type="button">Service</button>
-                <nav>
+                <h4 class="visuallyhidden">Service</h4>
+                <button type="button" id="service">Service</button>
+                <nav id="serviceInhoud">
                     <ul>
                         <li> <a href="#"> Bestellen</a></li>
                         <li> <a href="#"> Betalen</a></li>
@@ -158,16 +171,18 @@
                 </nav>
             </section>
             <section>
-                <button type="button">Contact</button>
-                <h4>consumenten</h4>
-                <p>Stuur je bericht naar</p>
-                <a href="mailto:webshop@kinglouie.nl">webshop@kinglouie.nl</a>
-                <p>of bel onze klantenservice</p>
-                <a href="tel: +31 (0)20 330 00 62">+31 (0)20 330 00 62</a>
-                <p>ma - vrij: 9:30 - 17:00 uur</p>
-                <p>Vanwege de huidige omstandigheden zijn wij helaas niet op alle werkdagen telefonisch bereikbaar. Stuur ons een e-mail en we zullen je zo snel mogelijk antwoorden.</p>
-                <h4>Groothandel</h4>
-                <p>Kom direct in contact met onze <a href="#">Groothandel</a></p>
+                <button type="button" id="contact">Contact</button>
+                <div id="contactInhoud">
+                    <h4>consumenten</h4>
+                    <p>Stuur je bericht naar</p>
+                    <a href="mailto:webshop@kinglouie.nl">webshop@kinglouie.nl</a>
+                    <p>of bel onze klantenservice</p>
+                    <a href="tel:+31(0)203300062">+31 (0)20 330 00 62</a>
+                    <p>ma - vrij: 9:30 - 17:00 uur</p>
+                    <p>Vanwege de huidige omstandigheden zijn wij helaas niet op alle werkdagen telefonisch bereikbaar. Stuur ons een e-mail en we zullen je zo snel mogelijk antwoorden.</p>
+                    <h4>Groothandel</h4>
+                    <p>Kom direct in contact met onze <a href="#">Groothandel</a></p>
+                </div>
             </section>
 
             <ul class="logos">
@@ -198,14 +213,16 @@
                 </li>
 
             </ul>
-           <section class="privacy"> <a href="# ">Privacybeleid</a> <a href="#">Algemene voorwaarden</a>
-           </section>
+            <section class="privacy">
+                <h5 class="visuallyhidden">privacybeleid en algemene voorwaarden</h5>
+                <a href="# ">Privacybeleid</a> <a href="#">Algemene voorwaarden</a>
+            </section>
             <section class="social_media">
+                <h5 class="visuallyhidden">sociale media king louie</h5>
                 <a href="#"><img src="images/facebook.svg" alt="facebook logo"></a> <a href="#"><img src="images/instagram.svg" alt="instagram logo"></a>
                 <a href="#"><img src="images/pinterest.svg" alt="pinterest logo"></a>
             </section>
         </section>
     </footer>
-</body>
-
-</html>
+    <script src="scripts/script.js"></script>
+</body></html>
