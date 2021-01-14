@@ -18,10 +18,13 @@
 <body>
 
     <header>
+        <a id="top"></a>
+        <a class="naarboven" href="#top"><img src="images/scroll.png" alt="terug naar boven icoon"></a>
+        <!-- https://stackoverflow.com/questions/32102747/how-to-make-a-back-to-top-button-using-css-and-html-only-->
         <h1 class="visuallyhidden">Velours kleding - King Louie</h1>
         <nav>
             <ul class="flex">
-                <li><button><img src="images/dark-search.svg" alt="zoek button"></button></li>
+                <li><button id="zoekButton"><img src="images/dark-search.svg" alt="zoek button"></button></li>
 
                 <li><img src="images/kinglouie-logo.svg" alt="logo king louie"></li>
 
@@ -29,13 +32,16 @@
                 <li><a href="#"><img src="images/dark-wishlist.svg" alt="verlanglijst icoon"></a> <a><img src="images/dark-shopping-bag.svg" alt="winkelmand icoon"></a></li>
             </ul>
         </nav>
+        <form id="zoekbalk">
+            <input type="search" placeholder="Zoek door de hele winkel...">
+        </form>
     </header>
 
     <main>
         <h2>velours</h2>
 
         <section class="filteren_sorteren">
-            <h3> Filteren en sorteren</h3>
+            <h3 class="visuallyhidden"> Filteren en sorteren</h3>
             <button type="button">Filteren</button>
             <button type="button">Sorteren</button>
         </section>
@@ -225,4 +231,6 @@
         </section>
     </footer>
     <script src="scripts/script.js"></script>
-</body></html>
+</body>
+
+</html>

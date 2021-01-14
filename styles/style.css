@@ -23,18 +23,19 @@ html {
 
 /*button css weghalen*/
 /*https://www.codegrepper.com/code-examples/actionscript/css+remove+styling+from+button*/
+
 button {
     background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 0 solid transparent;
+    text-shadow: 0 0 0 transparent;
 }
 
 button:hover {
     background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
+    box-shadow: 0 0 0 transparent;
+    border: 0 solid transparent;
+    text-shadow: 0 0 0 transparent;
 }
 
 
@@ -43,6 +44,9 @@ button:focus {
 }
 
 /*einde button css weghalen*/
+
+
+/* css voor de hele body*/
 
 body {
     background-color: #fcfdf7;
@@ -54,7 +58,8 @@ body {
 }
 
 /*css voor toegankelijkheid*/
-/*links*/
+/*linkjes*/
+
 a {
     transition: all 0.3s ease;
 }
@@ -65,7 +70,7 @@ a:visited {
 
 a:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+    box-shadow: 0 0 0 1rem rgba(21, 156, 228, 0.4);
 
 }
 
@@ -79,17 +84,23 @@ a:hover {
 
 button:hover {
     cursor: pointer;
-    /color: white;
-    /background-color: lightblue;
-    /border-color: lightblue;
+
 }
 
 button:focus {
-    background-color: lightblue;
-    border: lightblue;
+    box-shadow: 0 0 0 0.5rem rgba(21, 156, 228, 0.4);
+    padding-top: .5rem;
+    transition: all 0.3s ease;
+    display: block;
+    outline-width: 1px;
+    outline-color: lightblue;
+
 }
 
+
 /*https://levelup.gitconnected.com/a11y-visually-hidden-elements-aea4ee784142*/
+/*css om headings onzichtbaar te maken op de site maar wel weergegeven in de code*/
+
 .visuallyhidden {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -101,9 +112,29 @@ button:focus {
     position: absolute;
 }
 
-/*css voor de header dus het gedeelte bovenaan beide pagina's*/
+/*back to top*/
+
+.naarboven {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--green);
+    border-radius: 2rem;
+    margin: 1rem;
+
+}
+
+.naarboven img {
+    width: 2rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
 
 
+}
+
+/*css voor de header het gedeelte bovenaan beide pagina's*/
 header > nav > ul {
     border-bottom: solid thin var(--grey);
     padding: 1rem 0;
@@ -142,20 +173,23 @@ main > h2 {
 
 }
 
+#zoekbalk input:first-of-type {
+    width: 100%;
+    border: solid thin var(--black);
+    color: var(--grey);
+    padding: .8rem 3rem;
+    border-radius: .8rem 0 .8rem 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fcfdf7;
+}
 
-/*css voor filteren en sorteren buttons velours pagina*/
-.filteren_sorteren h3 {
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
+#zoekbalk input:nth-of-type(2) {
+    padding: .8rem 1rem;
+    background-color: #fcfdf7;
 
 }
 
+/*css voor filteren en sorteren buttons velours pagina*/
 section.filteren_sorteren {
     display: flex;
     position: -webkit-sticky;
@@ -164,6 +198,7 @@ section.filteren_sorteren {
     background-color: #fcfdf7;
 
 }
+
 
 
 .filteren_sorteren button {
@@ -176,7 +211,6 @@ section.filteren_sorteren {
     padding: .8rem 3rem;
     width: 50%;
     border-radius: .8rem 0 .8rem 0;
-    /background-color: #fcfdf7;
     font-family: 'Open Sans', sans-serif;
     transition: all 0.3s ease;
 }
@@ -221,7 +255,7 @@ main > section .producten {
     font-size: .8rem;
 }
 
-/*css voor de main, overzichts pagina*/
+/*css voor de main van de overzichts pagina*/
 
 .info_artikelen {
     color: var(--grey);
@@ -260,10 +294,13 @@ article > a > h3 {
     margin: 0;
 }
 
+.producten > article > a {
+    display: block;
+}
 
 .producten article p {
     color: var(--black);
-    font-weight: 1000;
+    font-weight: 800;
 }
 
 .color {
@@ -276,16 +313,28 @@ article > a > h3 {
 
 /*main voor de detailpagina*/
 
-.detail img:first-of-type{
+
+.detail img:first-of-type {
     width: 100%;
 }
 
-/body.detailpagina > main.detail > section > h2:first-of-type{
-    background: none;
-
+.detail section:first-of-type {
+    position: relative;
 }
 
-main.detail section h2 {
+.detail section img:nth-of-type(2) {
+    width: 2.2rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    padding: .4rem;
+    border: solid thin white;
+    border-radius: 1.1rem;
+    background-color: white;
+}
+
+main.detail section h2 button {
     text-transform: uppercase;
     color: var(--darkblue);
     font-family: 'Open Sans', sans-serif;
@@ -298,21 +347,24 @@ main.detail section h2 {
     background-size: .8rem;
 }
 
-/main.detail section h2:first-of-type{
+
+main.detail section:first-of-type h2 {
     font-family: 'Crimson Text', serif;
     font-size: 1.2rem;
     font-weight: 800;
     display: inline-block;
     padding-bottom: 1rem;
-    color: var(--darkblue)
+    color: var(--darkblue);
+    background: none;
 }
+
 
 .detail a:first-of-type {
     display: block;
     color: var(--grey);
     text-decoration: underline;
     font-size: 1rem;
-    font-weight: thin;
+    font-weight: 100;
 
 }
 
@@ -325,7 +377,8 @@ main.detail section h2 {
 
 
 }
-.detail h3{
+
+.detail h3 {
     color: var(--darkblue);
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -342,42 +395,55 @@ main.detail section h2 {
     text-decoration: underline;
 
 }
-.detail > section > div > h2{
+
+.detail > section > div > h2 {
     background: none;
 }
-/.detail form {
-    padding: 1rem 0;
-}
 
-/.detail form input {
-    display: block;
-    width: 20%;
-    padding: .8rem;
-    border: .1rem solid #ccc;
-    box-shadow: inset 0.1rem 0.1rem 0.3rem lightgrey;
+/*css voor buttons in sections*/
+.detail > section > button {
+    margin: 1rem 0rem;
+    text-transform: uppercase;
     color: var(--darkblue);
-    text-align: right;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    background: url(../images/plus.svg);
+    background-repeat: no-repeat;
+    background-position: right 3% bottom 50%;
+    background-size: .8rem;
+    width: 100%;
 }
-.detail> section >div:nth-of-type(2){
-    display: flex;
-    justify-content: space-between;
 
-}
-.detail section:nth-of-type(2){
+
+/*css voor de fixed section onderaan*/
+
+.detail section:nth-of-type(2) {
 
     position: fixed;
     left: 0;
     bottom: 0;
-    /z-index: 45;
     width: 100%;
     padding: 0 1rem;
-    /margin: 0;
-    /box-sizing: border-box;
-    box-shadow: 0 -0.05px 1rem rgba(8,5,6,.2);
+    box-shadow: 0 -0.05px 1rem rgba(8, 5, 6, .2);
     background-color: #fcfdf7;
+
 }
-.detail > section > button:first-of-type {
-    margin-bottom:
+
+section.fixed div {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+/*css voor button "kies je maat"*/
+
+
+
+.fixed button:first-of-type {
+    margin: 1rem 0rem;
     text-transform: uppercase;
     font-weight: 500;
     text-align: left;
@@ -396,7 +462,9 @@ main.detail section h2 {
 
 }
 
-.detail > section > button {
+/*css voor in winkelmand*/
+
+.fixed button:nth-of-type(2) {
     margin: 1rem 0rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -409,7 +477,9 @@ main.detail section h2 {
     border-radius: .8rem 0 .8rem 0;
     box-shadow: 0 0.20rem 0 0 #1e1a3c;
 
+
 }
+
 
 #heart {
     padding-right: 1rem;
@@ -424,8 +494,7 @@ main.detail section h2 {
 
 }
 
-.detail section:nth-of-type(3) ul
-{
+.detail section:nth-of-type(3) ul {
     list-style-type: none;
     padding: 1rem 0;
     color: var(--gold);
@@ -435,9 +504,6 @@ main.detail section h2 {
 
 }
 
-.detail section:nth-of-type(3) ul li {
-    /padding: .5rem 0;
-}
 
 
 .detail section:nth-of-type(4),
@@ -446,8 +512,6 @@ main.detail section h2 {
     border-bottom: solid thin var(--grey);
 }
 
-.detail section:nth-of-type(8){
-display: flex; }
 
 .detail section:nth-last-of-type(4) table tr td {
     color: var(--darkblue);
@@ -471,17 +535,6 @@ display: flex; }
 
 }
 
-/.detail section h3:nth-of-type(3) {
-    color: var(--darkblue);
-    font-size: 1.5rem;
-    height: 1rem;
-    width: 100%;
-    position: relative;
-    clip-path: none;
-    overflow: visible;
-
-}
-
 
 /* css voor de footer*/
 /* nieuwsbrief css*/
@@ -489,7 +542,6 @@ display: flex; }
     background-image: url(../images/newsletter-mobile2.png);
     background-repeat: no-repeat;
     background-size: cover;
-
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 6rem;
@@ -547,14 +599,14 @@ footer > section input[type=checkbox] {
 }
 
 
-/* css voor navigatie in de footer */
-#button{
+/* css voor toggle in en uitklappen */
+#button {
     transition: all 0.3s ease;
     cursor: pointer;
 
 }
 
-.hide{
+.hide {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
     height: 1px;
@@ -565,8 +617,10 @@ footer > section input[type=checkbox] {
     position: absolute;
 }
 
-footer{
-margin-bottom: 18rem;}
+/* css voor navigatie in de footer */
+footer {
+    margin-bottom: 18rem;
+}
 
 .footer_nav button {
     font-size: 1.2rem;
@@ -651,6 +705,8 @@ footer section:nth-of-type(4) a:hover {
 
 
 }
+
+/*logo's onderaan de pagina*/
 
 .logos {
     display: flex;

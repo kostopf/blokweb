@@ -18,6 +18,7 @@
 
 <body class="detailpagina">
     <header>
+        <!-- header met logo, zoekbutton, wishlist, winkelmandje-->
         <h1 class="visuallyhidden"> King Louie - Uma Fluted Dress Tao </h1>
         <nav>
             <ul class="flex">
@@ -29,17 +30,26 @@
                 <li><a href="#"><img src="images/dark-wishlist.svg" alt="verlanglijst icoon"></a> <a><img src="images/dark-shopping-bag.svg" alt="winkelmand icoon"></a></li>
             </ul>
         </nav>
+        <form id="zoekbalk">
+            <input type="search" placeholder="Zoek door de hele winkel...">
+        </form>
     </header>
     <main class="detail">
+        <!-- section met informatie over het kledingstuk-->
         <section>
             <img src="images/kledingstuk1.jpg" alt="#">
+            <img src="images/dark-wishlist%20(1).svg" alt="wishlist icoon">
+
             <h2>Uma Fluted Dress Tao</h2>
             <a href="#">Schrijf de eerste review over dit product</a>
             <p>€109,95</p>
             <p>Kleur: Black</p>
             <img src="images/stoftextuur_roze.jpg" alt="roze gebloemde stoftextuur" class="color">
         </section>
-        <section>
+        <!-- section die fixed is aan de onderkant -->
+
+        <section class="fixed">
+
             <div>
                 <h2>Uma Fluted Dress Tao</h2>
                 <p>€109,95</p>
@@ -50,32 +60,8 @@
             <button type="submit" title="In winkelmand">In winkelmand</button>
 
         </section>
-        <!--
-        <form>
 
-           <h3>Product opties</h3>
-            <label>Kies je maat</label>
-            <select>
-                <option>XS</option>
-                <option>S</option>
-                <option>M</option>
-                <option>L</option>
-                <option>XL</option>
-                <option>XXL</option>
-            </select>
-        </form>
-        <p> Uitverkocht? Klik op jouw maat en ontvang een mail bij nieuwe voorraad.</p>
-        <a href="#">Bekijk maatboog</a>
-        -->
 
-        <!--
-            <label>Aantal</label>
-            <input type="text">
--->
-        <!--
-
-        <a href="#"><img src="images/dark-wishlist.svg" alt="#" id="heart">Voeg toe aan verlanglijst</a>
--->
 
         <section>
             <h3 class="visuallyhidden">Informatie over bestellen</h3>
@@ -95,8 +81,11 @@
                 </li>
             </ul>
         </section>
+        <!-- section met informatie over de gegevens van de jurk -->
         <section>
-            <h2 id="gegevens">Gegevens</h2>
+            <h2 class="visuallyhidden">Gegevens</h2>
+            <button id="gegevens">Gegevens</button>
+
             <ul id="gegevensInhoud">
                 <li>
                     Midi jurk
@@ -120,8 +109,10 @@
             </ul>
 
         </section>
+        <!-- section met meer informatie over het kledingstuk -->
         <section>
-            <h2 id="meerInformatie">Meer informatie</h2>
+            <h2 class="visuallyhidden">Meer informatie</h2>
+            <button id="meerInformatie">Meer informatie</button>
             <table id="meerInformatieInhoud">
                 <tr>
                     <td>Gemaakt in</td>
@@ -150,35 +141,27 @@
             </table>
         </section>
         <section>
-            <h2>Reviews</h2>
+            <h2 class="visuallyhidden">Reviews</h2>
+            <button>Reviews</button>
 
         </section>
+        <!-- section met informatie over het verzenden -->
         <section>
-            <h2 id="verzending">Verzending</h2>
+            <h2 class="visuallyhidden">Verzending</h2>
+            <button id="verzending">Verzending</button>
             <div id="verzendingInhoud">
-            <h3>Verzendtarieven:</h3>
-            <p>Gratis verzending bij €49,95 of meer</p>
-            <h3>Onder de €49,95:</h3>
-            <p>€ 3,95 standaard levering met PostNL</p>
-            <p>GRATIS retourneren binnen 30 dagen</p>
+                <h3>Verzendtarieven:</h3>
+                <p>Gratis verzending bij €49,95 of meer</p>
+                <h3>Onder de €49,95:</h3>
+                <p>€ 3,95 standaard levering met PostNL</p>
+                <p>GRATIS retourneren binnen 30 dagen</p>
             </div>
         </section>
-        <section>
-            <h2 class="visuallyhidden">Aanbevolen producten</h2>
-            <article>
-                <h3 class="visuallyhidden">Zelfde model</h3>
-                <img src="images/kledingstuk1.jpg" alt="model in roze jurk met bloemenpatroon en halflange mouwen">
-                <button></button>
-            </article>
-            <article>
-                <h3 class="visuallyhidden">Zelfde print</h3>
-                <img src="images/gebloemdepatroon.jpg" alt="roze gebloemde stoftextuur">
-                <button></button>
-            </article>
-        </section>
+
     </main>
 
     <footer>
+        <!-- section met inschrijf formulier voor de nieuwsbrief -->
         <section class="nieuwsbrief">
 
 
@@ -302,5 +285,7 @@
         </section>
 
     </footer>
-<script src="scripts/script.js"></script>
-</body></html>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
